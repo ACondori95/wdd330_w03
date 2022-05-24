@@ -20,3 +20,6 @@ console.table(fifteen);
 
 const fullNames = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
 console.log(fullNames);
+
+const ordered = inventors.sort((a, b) => a.year > b.year ? 1 : -1);
+console.table(ordered);
