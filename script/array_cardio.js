@@ -17,3 +17,6 @@ const people = ['Beck, Glenn', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick
 
 const fifteen = inventors.filter(inventor => (inventor.year >= 1500 && inventor.year < 1600));
 console.table(fifteen);
+
+const fullNames = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
+console.log(fullNames);
